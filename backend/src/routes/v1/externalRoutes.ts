@@ -7,10 +7,11 @@
  */
 
 import { Router } from 'express';
+import weatherRoutes from './weatherRoutes';
 
 const router = Router();
 
-// Public routes will be added here as features are implemented
-// Example: router.use('/weather', weatherRoutes);
+// Weather routes - /api/v1/external/weather/...
+router.use('/weather', weatherRoutes);
 
 export default router;

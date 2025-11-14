@@ -15,6 +15,7 @@ export const HTTP_STATUS = {
   NOT_FOUND: 404,
   CONFLICT: 409,
   UNPROCESSABLE_ENTITY: 422,
+  TOO_MANY_REQUESTS: 429,
   INTERNAL_SERVER_ERROR: 500,
   SERVICE_UNAVAILABLE: 503,
 } as const;
@@ -29,6 +30,7 @@ export const HTTP_MESSAGES = {
   NOT_FOUND: 'Resource not found',
   CONFLICT: 'Resource conflict',
   UNPROCESSABLE_ENTITY: 'Unprocessable entity',
+  TOO_MANY_REQUESTS: 'Too many requests',
   INTERNAL_SERVER_ERROR: 'Internal server error',
   SERVICE_UNAVAILABLE: 'Service unavailable',
 } as const;
